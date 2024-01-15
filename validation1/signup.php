@@ -14,7 +14,7 @@ if($_SERVER["REQUEST_METHOD"]=='POST'){
         $address=$_POST['address'];
         $phone=$_POST['phone'];
 
-        $sql = "SELECT * FROM `data` WHERE name ='$name'";
+        $sql = "SELECT * FROM `data` WHERE email='$email'";
         $result =mysqli_query($conn,$sql);
         if ($result){
             $num=mysqli_num_rows($result);
